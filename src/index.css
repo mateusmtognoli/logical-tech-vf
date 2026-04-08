@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Barlow Semi Condensed", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-brand-primary: #C5A572;
+  --color-brand-bg: #243757;
+  --color-brand-bg-light: #344e7d;
+  --color-brand-surface: #253859;
+  --color-brand-dark: #1a2942;
+  --color-brand-accent: #d4b68a;
+  --color-brand-text: #F1F5F8;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans antialiased;
+  }
+}
+
+.tech-grid {
+  background-image: radial-gradient(circle at 2px 2px, rgba(241, 245, 248, 0.03) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.glass-card {
+  @apply bg-brand-text/5 backdrop-blur-md border border-brand-text/10 rounded-2xl;
+}
+
+.blue-glow {
+  box-shadow: 0 0 30px rgba(197, 165, 114, 0.3);
+}
